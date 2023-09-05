@@ -22,7 +22,7 @@ DOCUMENTATION = '''
       playbook_status_url:
         description: REST API endpoint URL
         env:
-          - name: playbook_status
+          - name: playbook_status_url
         ini:
           - section: callback_playbook_status
             key: playbook_status_url
