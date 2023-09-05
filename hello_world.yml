@@ -1,0 +1,16 @@
+---
+- name: "Simple play to demonstrate tasks with an intentional pause"
+  hosts: localhost
+  gather_facts: false
+  tasks:
+  - name: "Debug task 1"
+    ansible.builtin.debug:
+
+  - name: "Intentional pause"
+    ansible.builtin.pause:
+      prompt: "Pausing for demo"
+      seconds: 10
+
+  - name: "Debug task 2"
+    ansible.builtin.debug:
+...
